@@ -5,6 +5,7 @@ import javax.naming.Context;
 import javax.naming.NamingException;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -12,6 +13,7 @@ import static org.junit.Assert.*;
  *
  * @author sbutton
  */
+@Ignore("want to see if this is causing trouble for weld")
 public class EmbeddedClientTest {
 
     private EJBContainer ejbContainer;
