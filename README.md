@@ -1,3 +1,10 @@
+This is an investigation into unit testing EJBs. It started as a fork of [https://github.com/buttso/weblogic-embedded-ejb](buttso/weblogic-embedded-ejb) and moved on to investigate other possible techniques for investigating EJBs in unit tests.
+
+The notes below are as they appear on Steve Button's github project.
+
+See here for the original project
+[https://github.com/buttso/weblogic-embedded-ejb](buttso/weblogic-embedded-ejb)
+
 # weblogic-embedded-ejb
 
 *Author: Steve Button*  
