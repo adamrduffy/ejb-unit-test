@@ -1,5 +1,6 @@
 package buttso.demo.weblogic.ejbembedded;
 
+import org.adamrduffy.ejbunittest.PingPong;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Ignore;
@@ -18,7 +19,7 @@ public class EmbeddedInjectClientTest {
     private EJBContainer ejbContainer;
 
     @Inject
-    PingPongBean ppb;
+    PingPong ppb;
 
     @Before
     public void setupTest() {
@@ -40,8 +41,8 @@ public class EmbeddedInjectClientTest {
     @Test
     public void testPingUsingClasses() throws NamingException {
         assertNotNull(ppb);
-        assertNotNull(ppb.ping());
-        assertTrue("pong".equals(ppb.ping()));
+        assertNotNull(ppb.name());
+        assertTrue("pong".equals(ppb.name()));
     }
 
 }

@@ -33,6 +33,11 @@
     </dependencies>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -41,10 +46,13 @@
                 <configuration>
                     <argLine>-Xmx128m</argLine>
                     <enableAssertions>false</enableAssertions>
-                    <classpathDependencyScopeExclude>compile</classpathDependencyScopeExclude>
                     <additionalClasspathElements>
                         <additionalClasspathElement>${weblogic.jar.path}</additionalClasspathElement>
-                    </additionalClasspathElements>                            
+                        <additionalClasspathElement>src/main/resources</additionalClasspathElement>
+                    </additionalClasspathElements>
+                    <classpathDependencyExcludes>
+                        <classpathDependencyExcludes>javax:javaee-web-api</classpathDependencyExcludes>
+                    </classpathDependencyExcludes>
                 </configuration>
             </plugin>
             <plugin>

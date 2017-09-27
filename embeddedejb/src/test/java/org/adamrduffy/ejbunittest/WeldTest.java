@@ -13,7 +13,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
-//@Ignore("appears to work if the embedded weblogic container is not running")
+@Ignore("appears to work if the embedded weblogic container is not running")
 public class WeldTest {
     @Rule
     public WeldInitiator weld = WeldInitiator.from(PingPongBean.class, PingPong.class, Ping.class).inject(this).build();

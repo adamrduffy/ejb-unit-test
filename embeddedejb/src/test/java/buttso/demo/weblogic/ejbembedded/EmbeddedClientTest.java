@@ -13,7 +13,7 @@ import static org.junit.Assert.*;
  *
  * @author sbutton
  */
-@Ignore("want to see if this is causing trouble for weld")
+//@Ignore("want to see if this is causing trouble for weld")
 public class EmbeddedClientTest {
 
     private EJBContainer ejbContainer;
