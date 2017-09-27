@@ -2,6 +2,7 @@ package org.adamrduffy.ejbunittest;
 
 import buttso.demo.weblogic.ejbembedded.PingPongBean;
 import org.jboss.weld.junit4.WeldInitiator;
+import org.junit.Ignore;
 import org.junit.Rule;
 import org.junit.Test;
 
@@ -12,6 +13,7 @@ import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
+//@Ignore("appears to work if the embedded weblogic container is not running")
 public class WeldTest {
     @Rule
     public WeldInitiator weld = WeldInitiator.from(PingPongBean.class, PingPong.class, Ping.class).inject(this).build();
